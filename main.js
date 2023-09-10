@@ -33,3 +33,7 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    loader.style.display = "none"
+})
