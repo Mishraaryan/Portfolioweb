@@ -18,7 +18,7 @@ function openmenu() {
 function closemenu() {
     sidemenu.style.right = "-200px";
 }
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzqcQA1YozrRJqyTUTWy5ofclCIyRm3Fw9s0mlfkYzBA3cqn4_aaTVlSvyJF-AW1NqK/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx1OdER-hoWVU5k-L4pgVq5DCn6OBf7cHqGVUbSqGQcTemlaS9YICBURMqQOqF1oh-J/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 form.addEventListener('submit', e => {
@@ -32,4 +32,8 @@ form.addEventListener('submit', e => {
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
+})
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    loader.style.display = "none"
 })
