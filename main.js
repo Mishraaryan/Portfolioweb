@@ -36,8 +36,6 @@ form.addEventListener('submit', e => {
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
     loader.style.display = "none"
-<<<<<<< HEAD
-=======
 })
 
 const toTop = document.querySelector(".to-top");
@@ -47,5 +45,4 @@ window.addEventListener("scroll", () =>{
     }else{
         toTop.classList.remove("active");
     }
->>>>>>> 87833ffa43b9427230bb8b72a53b2a3f7d184f9d
 })
